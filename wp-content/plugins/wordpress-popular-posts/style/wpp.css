@@ -1,0 +1,122 @@
+/*
+Wordpress Popular Posts plugin stylesheet
+Developed by Hector Cabrera
+cabrerahector.com | @cabrerahector
+
+Use the following classes to style your popular posts list as you like.
+*/
+
+/* Styles the "Sorry, no data so far" message */
+.wpp-no-data {
+}
+
+/* Popular Posts Title */
+h1.title {
+	font: 600 14px 'Open Sans';
+	color: #45ac9d;
+	margin-bottom: 20px;
+}
+
+/* UL - Popular Posts container styles */
+ol.wpp-list {
+    list-style-type: none;
+    list-style-type: decimal !ie; /*IE 7- hack*/
+
+    margin: 0;
+    margin-left: 3em;
+    padding: 0;
+
+    counter-reset: li-counter;
+}
+
+ol.wpp-list > li{
+    position: relative;
+    margin-bottom: 20px;
+    padding-left: 0.5em;
+    min-height: 3em;
+    border-left: 2px solid #CCCCCC;
+}
+
+ol.wpp-list > li:before {
+    position: absolute;
+    top: 0;
+    left: -1em;
+    width: 0.8em;
+    font-size: 1.5em;
+    line-height: 1;
+    font-weight: bold;
+    text-align: right;
+    color: #464646;
+    content: counter(li-counter);
+    counter-increment: li-counter;
+}
+
+ol.wpp-list li span.wpp-stats { display:block; }
+
+	/* Styles for the popular post in view */
+	.wpp-list li.current {
+
+
+	}
+
+		/* Thumbnail styles */
+		.wpp-thumbnail {
+			display:inline;
+			float:left;
+			margin:0 5px 0 0;
+			border:none;
+
+
+		}
+
+		/* Title styles */
+		.wpp-post-title {
+			font: 600 14px 'Open Sans';
+			color: #3b3b3b;
+			margin-bottom: 15px;
+
+
+		}
+
+		.wpp-post-title:hover {
+			text-decoration:underline;
+		}
+
+		/* Excerpt styles */
+		.wpp-excerpt {
+		}
+
+		/* Stats tag styles */
+		.post-stats {
+			display:block;
+			font-size:9px;
+			font-weight:bold;
+		}
+
+			/* Comments count styles */
+			.wpp-comments {
+				font: 600 14px 'Open Sans';
+				color: #808080;
+			}
+
+			/* Views count styles */
+			.wpp-views {
+				font: 600 14px 'Open Sans';
+				color: #808080;
+			}
+
+			/* Author styles */
+			.wpp-author {
+			}
+
+			/* Post date styles */
+			.wpp-date {
+			}
+
+			/* Post category styles */
+			.wpp-category {
+			}
+
+		/* WP-PostRatings styles */
+		.wpp-rating {
+		}
